@@ -1,0 +1,238 @@
+:root {
+  --main-color: #f8412b;
+  --secondary-color: #4f4f4f;
+  --third-color: #424146;
+  --fourth-color: #eeeff1;
+}
+
+body {
+  background-image: url("images/Background-Image.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+.mobile-nav {
+  padding: 10px;
+}
+
+.mobile-nav i {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+}
+
+header {
+  padding: 10px;
+}
+
+header .hello-p {
+  color: var(--main-color);
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+header h1 {
+  color: var(--main-color);
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+header .brief-p {
+  font-size: 15px;
+  border: 0.5px solid white;
+  background-color: #f7f7f7;
+  padding: 15px;
+  color: var(--secondary-color);
+}
+
+header .period-p {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+header .place-p {
+  margin-top: 0;
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+
+.line {
+  border: 1px solid var(--main-color);
+  width: 30px;
+
+}
+
+.main-program,
+.partner {
+  background-color: var(--third-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-program .title,
+.featured-artists .title,
+.partner .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.main-program .title h2,
+.partner .title h2 {
+  color: var(--fourth-color);
+}
+
+.main-program .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-program .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+  width: 90%;
+  background-color: #4d4e50;
+}
+
+.main-program .cards .card i {
+  display: flex;
+  justify-content: center;
+  color: var(--fourth-color);
+  width: 20%;
+}
+
+.main-program .cards .card h3 {
+  color: var(--main-color);
+  width: 30%;
+}
+
+.main-program .cards .card p {
+  width: 50%;
+  color: var(--fourth-color);
+}
+
+.main-program .join {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-program .join a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--fourth-color);
+  width: 70%;
+  height: 60px;
+}
+
+.featured-artists {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-artists .title h2 {
+  color: var(--secondary-color);
+}
+
+.featured-artists .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-artists .cards .card {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  gap: 20px;
+}
+
+.featured-artists .cards .card .chess-img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.featured-artists .cards .card .artist-img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.featured-artists .cards .card .text-content h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+
+.featured-artists .cards .card .text-content .artist-title {
+  margin-top: 10px;
+  color: var(--main-color);
+}
+
+.featured-artists .cards .card .text-content .gray-line {
+  background-color: var(--secondary-color);
+  height: 0.1px;
+  width: 30px;
+}
+
+.featured-artists .cards .card .text-content .artist-quote {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.partner .companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.partner .companies img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer p {
+  color: var(--secondary-color);
+}
