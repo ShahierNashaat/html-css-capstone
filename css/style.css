@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("images/Background-Image.jpg");
+  background-image: url("../images/Background-Image.jpg");
   background-repeat: no-repeat;
   background-size: auto 100vh;
   font-family: 'Roboto Condensed', sans-serif;
@@ -324,7 +324,7 @@ footer {
 
   header {
     padding-left: 10%;
-    background-image: url("images/Background-Image.jpg");
+    background-image: url("../images/Background-Image.jpg");
     background-size: cover;
   }
 
