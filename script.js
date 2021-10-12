@@ -10,7 +10,10 @@ closeMobileMenuButton.addEventListener('click', () => {
   mobileMenu.classList.add('display-none');
 });
 
-const currentPage = window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0];
+let currentPage = window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0];
+if (currentPage === '') {
+  currentPage = 'index.html';
+}
 const currentMenuLinks = document.querySelectorAll(`nav .links a[href$='${currentPage}']`);
 currentMenuLinks[0].style.color = '#f8412b';
 currentMenuLinks[1].style.color = '#f8412b';
