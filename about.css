@@ -75,14 +75,20 @@ header a {
   text-align: center;
 }
 
-.best-courses a,
-.best-courses a {
+.best-courses .courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-courses .courses a {
   text-decoration: none;
   margin-bottom: 20px;
 }
 
-.best-courses a .course-1,
-.best-courses a .course-2 {
+.best-courses .courses a .course-1,
+.best-courses .courses a .course-2 {
   width: 300px;
   height: 180px;
   display: flex;
@@ -95,8 +101,8 @@ header a {
   padding: 20px;
 }
 
-.best-courses a .course-1 img,
-.best-courses a .course-2 img {
+.best-courses .courses a .course-1 img,
+.best-courses .courses a .course-2 img {
   position: absolute;
   top: 0;
   left: 0;
@@ -104,4 +110,20 @@ header a {
   height: 100%;
   z-index: -1;
   opacity: 0.3;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding-left: 0;
+  }
+
+  .logo .logo-img {
+    width: fit-content;
+    padding: 20px 60px;
+  }
+
+  .best-courses .courses {
+    flex-direction: row;
+    gap: 20px;
+  }
 }

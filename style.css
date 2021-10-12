@@ -22,6 +22,61 @@ body {
   cursor: pointer;
 }
 
+.mobile-nav .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 5;
+  transition-property: margin-right;
+  transition-duration: 0.5s;
+}
+
+.mobile-nav .mobile-menu div {
+  padding: 20px;
+  align-self: flex-start;
+  font-size: 30px;
+}
+
+.mobile-nav .mobile-menu div span {
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-menu .links {
+  padding: 30px;
+  list-style-type: none;
+}
+
+.mobile-nav .mobile-menu .links li {
+  margin-bottom: 20px;
+}
+
+.main-program .join a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--fourth-color);
+  width: 70%;
+  height: 60px;
+}
+
+.mobile-nav .mobile-menu .links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
+.display-none {
+  margin-left: -100vw;
+}
+
 main {
   width: 100%;
 }
@@ -66,7 +121,6 @@ header .place-p {
 .line {
   border: 1px solid var(--main-color);
   width: 30px;
-
 }
 
 .main-program,
@@ -123,6 +177,10 @@ header .place-p {
   width: 30%;
 }
 
+footer p {
+  color: var(--secondary-color);
+}
+
 .main-program .cards .card p {
   width: 50%;
   color: var(--fourth-color);
@@ -134,17 +192,6 @@ header .place-p {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.main-program .join a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--main-color);
-  color: var(--fourth-color);
-  width: 70%;
-  height: 60px;
 }
 
 .featured-artists {
@@ -174,6 +221,7 @@ header .place-p {
   position: absolute;
   width: 80px;
   height: 80px;
+  opacity: 0.2;
 }
 
 .featured-artists .cards .card .artist-img {
@@ -215,6 +263,11 @@ header .place-p {
   margin-bottom: 30px;
 }
 
+footer img {
+  width: 100px;
+  height: auto;
+}
+
 .partner .companies img {
   width: 100px;
   height: auto;
@@ -228,11 +281,117 @@ footer {
   gap: 10px;
 }
 
-footer img {
-  width: 100px;
-  height: auto;
+.desktop-nav {
+  display: none;
 }
 
-footer p {
-  color: var(--secondary-color);
+@media only screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  body {
+    background-image: unset;
+  }
+
+  .desktop-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+  }
+
+  .desktop-nav img {
+    width: 100px;
+    height: auto;
+  }
+
+  .desktop-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .desktop-nav ul a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+
+  header {
+    padding-left: 10%;
+    background-image: url("images/Background-Image.jpg");
+    background-size: cover;
+  }
+
+  header .hello-p {
+    font-size: 40px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header .brief-p {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  header .period-p {
+    font-size: 40px;
+  }
+
+  header .place-p {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .main-program .cards {
+    flex-direction: row;
+    gap: 5px;
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+
+  .main-program .cards .card {
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    height: 200px;
+    width: 20%;
+  }
+
+  .main-program .cards .card h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-program .cards .card p {
+    width: fit-content;
+    text-align: center;
+  }
+
+  .main-program .join a {
+    width: fit-content;
+    background-color: unset;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+  .featured-artists .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .featured-artists .cards .card {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-program .cards .card {
+    width: 15%;
+  }
 }
