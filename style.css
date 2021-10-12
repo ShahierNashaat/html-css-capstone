@@ -33,7 +33,7 @@ body {
   height: 100vh;
   background-color: white;
   z-index: 5;
-  transition-property: margin-right;
+  transition-property: margin-left;
   transition-duration: 0.5s;
 }
 
@@ -65,6 +65,10 @@ body {
   color: var(--fourth-color);
   width: 70%;
   height: 60px;
+}
+
+.main-program .join a:hover {
+  background-color: #da2713;
 }
 
 .mobile-nav .mobile-menu .links a {
@@ -376,6 +380,10 @@ footer {
     background-color: unset;
     text-decoration: underline;
     font-size: 20px;
+  }
+
+  .main-program .join a:hover {
+    color: var(--main-color);
   }
 
   .featured-artists .cards {

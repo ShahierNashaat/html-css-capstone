@@ -85,11 +85,15 @@ header a {
 .best-courses .courses a {
   text-decoration: none;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 .best-courses .courses a .course-1,
 .best-courses .courses a .course-2 {
-  width: 300px;
+  width: 100%;
   height: 180px;
   display: flex;
   justify-content: center;
@@ -99,6 +103,7 @@ header a {
   color: var(--secondary-color);
   font-size: 20px;
   padding: 20px;
+  border: 0.5px solid #d9d3d3;
 }
 
 .best-courses .courses a .course-1 img,
@@ -125,5 +130,6 @@ header a {
   .best-courses .courses {
     flex-direction: row;
     gap: 20px;
+    padding: 0 20px;
   }
 }
