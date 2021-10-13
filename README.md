@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Module 1 Capstone
+# Complete Character Drawing Academy
 
 > Capstone project for HTML & CSS Module at Microverse.
 
