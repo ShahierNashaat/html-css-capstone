@@ -2,11 +2,11 @@
 
 # Module 1 Capstone
 
-> One paragraph statement about the project.
+> Capstone project for HTML & CSS Module at Microverse.
 
 ![screenshot](./images/app_screenshot.png)
 
-Additional description about the project and its features.
+The project is about academy that teach drawing, the website is cosisted of home and about pages and also responsive.
 
 ## Built With
 
@@ -55,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Got inspired by [CC-Global-Summit-2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Got inspired by [Cindy Shin](https://www.behance.net/adagio07)
 
 ## 📝 License
 
