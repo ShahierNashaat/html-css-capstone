@@ -5,10 +5,6 @@
   --fourth-color: #eeeff1;
 }
 
-hr {
-  width: 100%;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -34,6 +30,7 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid black;
 }
 
 .logo h2 {
