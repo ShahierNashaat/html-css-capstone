@@ -18,6 +18,10 @@ Additional description about the project and its features.
 
 [Live Demo Link](https://shahiernashaat.github.io/module1-capstone/)
 
+## Description Video
+
+[See The Discription Video](https://www.loom.com/share/48f82f204ebb46559b2ade84a6827f3a)
+
 
 ## Getting Started
 
