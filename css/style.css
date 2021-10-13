@@ -384,6 +384,7 @@ footer {
 
   .main-program .join a:hover {
     color: var(--main-color);
+    background-color: transparent;
   }
 
   .featured-artists .cards {
