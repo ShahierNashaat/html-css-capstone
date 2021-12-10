@@ -16,7 +16,7 @@ The project is about academy that teach drawing, the website is cosisted of home
 
 ## Live Demo
 
-[Live Demo Link](https://shahiernashaat.github.io/module1-capstone/)
+[Live Demo Link](https://shahiernashaat.github.io/html-css-capstone/)
 
 ## Description Video
 
